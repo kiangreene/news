@@ -12,7 +12,8 @@ jobs:
 permissions:
   contents: write
 env:
-  GITHUB_PAT: ${{ secrets.TOKEN }}
+  NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+
 steps:
   - uses: actions/checkout@v4
 - uses: r-lib/actions/setup-r@v2
